@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 /* body {} */
 
@@ -21,23 +22,21 @@ header {
 
 .nav-link {
   color: #FFFFFF;
-  font-family: Roboto;
+  font-family: 'Poppins';
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
   letter-spacing: 0em;
-
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out !important;
 }
 
-.nav-item {
-  -webkit-transition: 5s ease-in-out;
-  -moz-transition: 5s ease-in-out;
-  -o-transition: 5s ease-in-out;
-  transition: 5s ease-in-out !important;
-}
-
-.nav-item :hover {
-  margin-left: 10px;
+.nav-link:hover {
+  color: #f1ecec !important;
+  margin-left: 15px;
+  /* width: 20px; */
 }
 
 .nav-link .d-md-none {
@@ -46,7 +45,7 @@ header {
 }
 
 .nav-item .btn {
-  font-family: Roboto;
+  font-family: 'Poppins';
   height: 30px;
   font-size: 15px;
   border-radius: 5px;
@@ -172,7 +171,7 @@ header {
 
 .main-header .col-10 span {
   color: #DBDAEA;
-  font-family: Roboto;
+  font-family: 'Poppins';
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -193,8 +192,8 @@ header {
 }
 
 .main-header .header-p {
-  font-family: Roboto;
-  font-size: 16px;
+  font-family: 'Barlow';
+  font-size: 17px;
   font-style: normal;
   font-weight: 500;
   line-height: 31px;
@@ -204,6 +203,7 @@ header {
 
 .main-header .app-btns {
   cursor: pointer;
+  width: 130px;
 }
 
 .footer {
@@ -217,7 +217,7 @@ header {
 .footer .footer2 .nav-link {
   z-index: 99;
   color: #FFFFFF;
-  font-family: Roboto;
+  font-family: 'Poppins';
   font-size: 13px;
   font-style: normal;
   font-weight: 500;
@@ -252,17 +252,21 @@ header {
   }
 
   .main-header .col-11 {
-    margin-top: 30%;
+    margin-top: 35%;
   }
 
   .main-header .header-text {
-    font-size: 40px;
+    font-size: 45px;
     line-height: 50px;
   }
 
   .main-header .header-p {
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 400;
+  }
+
+  .main-header .app-btns {
+    width: 145px;
   }
 
   .footer {

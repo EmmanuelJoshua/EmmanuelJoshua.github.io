@@ -25,15 +25,29 @@ header {
   font-size: 15px;
   font-style: normal;
   font-weight: 500;
-  line-height: 19px;
   letter-spacing: 0em;
-  text-align: center;
+
+}
+
+.nav-item {
+  -webkit-transition: 5s ease-in-out;
+  -moz-transition: 5s ease-in-out;
+  -o-transition: 5s ease-in-out;
+  transition: 5s ease-in-out !important;
+}
+
+.nav-item :hover {
+  margin-left: 10px;
+}
+
+.nav-link .d-md-none {
+  width: 15px;
+  margin-bottom: 1px;
 }
 
 .nav-item .btn {
   font-family: Roboto;
   height: 30px;
-  width: 120px;
   font-size: 15px;
   border-radius: 5px;
   background: #FF0E83;
@@ -211,7 +225,6 @@ header {
 }
 
 @media screen and (max-width: 991px) {
-
   .navbar-toggle {
     display: block;
   }
@@ -220,6 +233,10 @@ header {
 @media screen and (max-width: 800px) {
   header {
     height: 100%;
+  }
+
+  .nav-item .btn {
+    height: 35px;
   }
 
   .navbar-toggle {
@@ -234,8 +251,13 @@ header {
     width: 80px;
   }
 
+  .main-header .col-11 {
+    margin-top: 30%;
+  }
+
   .main-header .header-text {
-    font-size: 35px;
+    font-size: 40px;
+    line-height: 50px;
   }
 
   .main-header .header-p {
@@ -244,7 +266,7 @@ header {
   }
 
   .footer {
-    margin-top: 15%;
+    margin-top: 25%;
   }
 
   .footer .col-md-6 {

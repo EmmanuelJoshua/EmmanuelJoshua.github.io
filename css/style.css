@@ -94,7 +94,7 @@ header {
   border-radius: 100%;
   width: 45px;
   height: 45px;
-  background-color: rgba(255, 255, 255, 0.185);
+  background-color: transparent;
 }
 
 #nav-icon1 {
@@ -167,8 +167,7 @@ header {
 
 
 .bg-images-one {
-  top: 140px;
-  left: 420px;
+  transform: translate(310%, 100%);
   position: absolute;
 }
 
@@ -191,7 +190,7 @@ header {
   width: 100px;
 }
 
-.main-header .col-11 {
+.main-header .col-12 {
   margin-top: 22%;
 }
 
@@ -200,7 +199,7 @@ header {
   margin-left: 3%;
 }
 
-.main-header .col-10 img {
+.main-header .col-11 img {
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
@@ -224,7 +223,8 @@ header {
   }
 }
 
-.main-header .col-10 span {
+.main-header .col-11 span {
+  text-decoration: none;
   color: #DBDAEA;
   font-family: 'Poppins';
   font-size: 13px;
@@ -302,15 +302,20 @@ header {
     width: 130px;
   }
 
+  .bg-images-three {
+    transform: translate(-30%, -130%);
+    right: 0;
+  }
+
   .bg-images-three img {
     width: 80px;
   }
 
-  .main-header .col-11 {
-    margin-top: 35%;
+  .main-header .col-12 {
+    margin-top: 40%;
   }
 
-  .main-header .col-10 {
+  .main-header .col-11 {
     margin-top: 15%;
     /* margin-left: 3%; */
   }
@@ -340,19 +345,25 @@ header {
   }
 
   .bg-images-one {
-    top: 180px;
-    left: 300px;
+    transform: translate(190%, 70%);
     position: absolute;
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 420px) {
   .main-header .header-text {
     font-size: 40px;
     line-height: 50px;
   }
 
+
+  .bg-images-one {
+    transform: translate(100%, 70%);
+    position: absolute;
+  }
+
+
   .main-header .app-btns {
-    width: 125px;
+    width: 130px;
   }
 }

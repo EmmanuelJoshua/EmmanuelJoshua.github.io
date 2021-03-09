@@ -99,7 +99,7 @@ header {
 
 #nav-icon1 {
   outline: transparent !important;
-  width: 26px;
+  /* width: 26px; */
   height: 45px;
   position: relative;
   -webkit-transform: rotate(0deg);
@@ -134,18 +134,22 @@ header {
 
 #nav-icon1 span:nth-child(1) {
   top: 12px;
+  width: 21px;
 }
 
 #nav-icon1 span:nth-child(2) {
   top: 20px;
+  width: 26px;
 }
 
 #nav-icon1 span:nth-child(3) {
   top: 28px;
+  width: 18px;
 }
 
 #nav-icon1.open span:nth-child(1) {
   top: 20px;
+  width: 26px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -159,6 +163,7 @@ header {
 
 #nav-icon1.open span:nth-child(3) {
   top: 20px;
+  width: 26px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
@@ -199,17 +204,17 @@ header {
   margin-left: 3%;
 }
 
-.main-header .col-11 img {
+/* .main-header .col-11 img {
   animation-duration: 2s;
   animation-iteration-count: infinite;
-}
+} */
 
-.bounce-2 {
+/* .bounce-2 {
   animation-name: bounce-2;
   animation-timing-function: ease;
-}
+} */
 
-@keyframes bounce-2 {
+/* @keyframes bounce-2 {
   0% {
     transform: translateY(0);
   }
@@ -221,7 +226,7 @@ header {
   100% {
     transform: translateY(0);
   }
-}
+} */
 
 .main-header .col-11 span {
   text-decoration: none;
@@ -361,7 +366,6 @@ header {
     transform: translate(100%, 70%);
     position: absolute;
   }
-
 
   .main-header .app-btns {
     width: 130px;

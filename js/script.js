@@ -12,6 +12,9 @@ $(window).scroll(function () {
     }
 
 });
+$('#myCarousel').carousel({
+    interval: 3000,
+})
 
 var drawRipple = function (ev) {
     var x = ev.clientX;

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+body {
+    transition: .25s ease-in-out;
+}
+
+.ripple {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    z-index: 999;
+    transform: scale(0);
+    background: linear-gradient(178.18deg, rgba(253, 116, 155, 0.7) -13.56%, rgba(40, 26, 200, 0.7) 158.3%);
+
+    border-radius: 50%;
+    position: fixed;
+}
+
+.animate {
+    animation: ripple-mo 1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes ripple-mo {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+
+header {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    background: linear-gradient(174.48deg, #090A0D -12.41%, #281AC8 120.17%);
+}

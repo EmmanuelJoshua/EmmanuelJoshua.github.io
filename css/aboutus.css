@@ -176,7 +176,7 @@ header {
 
 .main-header .about-text {
     font-family: Nunito;
-    font-size: 27px;
+    font-size: 28px;
     font-style: normal;
     font-weight: 900;
     line-height: 27px;
@@ -202,10 +202,6 @@ h6 {
     font-weight: 700;
     line-height: 27px;
     letter-spacing: 0em;
-}
-
-.questions {
-    z-index: 9999;
 }
 
 .questions .btn-link {
@@ -239,18 +235,18 @@ h6 {
 
 .bg-images-one {
     z-index: 1;
-    transform: translate(310%, 100%);
+    transform: translate(0%, 120%);
     position: absolute;
 }
 
 .bg-images-two {
-    z-index: 1;
+    z-index: -999 i !important;
     transform: translate(0%, -100%);
     position: absolute;
 }
 
 .bg-images-two img {
-
+    z-index: -999 i !important;
     width: 190px;
 }
 
@@ -266,6 +262,7 @@ h6 {
 }
 
 .footer {
+    z-index: -999;
     margin-top: 8%;
 }
 
@@ -297,8 +294,21 @@ h6 {
         display: block;
     }
 
+    .bg-images-two img {
+        width: 130px;
+    }
+
+    .bg-images-three {
+        transform: translate(-30%, -130%);
+        right: 0;
+    }
+
+    .bg-images-three img {
+        width: 80px;
+    }
+
     .main-header .col-md-9 {
-        margin-top: 25% !important;
+        margin-top: 30% !important;
     }
 
     .footer {

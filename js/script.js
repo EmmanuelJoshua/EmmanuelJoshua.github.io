@@ -12,9 +12,10 @@ $(window).scroll(function () {
     }
 
 });
-$('#myCarousel').carousel({
-    interval: 3000,
-})
+
+var arr = [1, 2, 3, 4, 5, 6];
+
+$('#myCarousel').carousel();
 
 var drawRipple = function (ev) {
     var x = ev.clientX;

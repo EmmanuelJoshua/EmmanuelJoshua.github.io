@@ -1,3 +1,16 @@
+/* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Roboto, sans-serif !important;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #343352;
+} */
+
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
@@ -65,9 +78,8 @@ header {
 }
 
 .nav-link:hover {
-    color: #f1ecec !important;
+    color: #DBCECE !important;
     margin-left: 15px;
-    /* width: 20px; */
 }
 
 .nav-link .d-md-none {
@@ -170,78 +182,31 @@ header {
     transform: rotate(-135deg);
 }
 
-.main-header .col-md-9 {
-    margin-top: 8% !important;
-}
 
-.main-header .contact-text {
-    font-family: Nunito;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 27px;
-    letter-spacing: 0em;
-}
-
-.main-header .contact-p {
-    font-family: 'Barlow';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.main-header h6 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: center;
-}
-
-.main-header .contact-btn {
-    font-family: 'Barlow';
-    font-size: 16px;
-    font-style: normal;
-    color: #FFFFFF;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0em;
-    text-align: center;
-    padding: 15px;
-    border: 1px solid #5458F7;
-    filter: drop-shadow(0px 8px 20px rgba(0, 0, 0, 0.1));
-    border-radius: 5px;
-}
-
-.main-header .social-buttons .bt {
-    margin-right: 32px;
+header {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+    background: linear-gradient(174.48deg, #090A0D -12.41%, #281AC8 120.17%);
 }
 
 .bg-images-one {
     z-index: 1;
-    transform: translate(505%, 210%);
+    transform: translate(0%, 120%);
     position: absolute;
-
 }
 
 .bg-images-two {
-    z-index: -999 i !important;
-    transform: translate(0%, -100%);
+    transform: translate(-32%, -77%);
     position: absolute;
 }
 
 .bg-images-two img {
-    z-index: -999 i !important;
-    width: 130px;
+    width: 190px;
 }
 
 .bg-images-three {
-    z-index: 1;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -45%);
     right: 0;
     position: absolute;
 }
@@ -250,124 +215,93 @@ header {
     width: 100px;
 }
 
-.advert-section {
-    margin-top: 15%;
+.main-header .col-12 {
+    margin-top: 10% !important;
 }
 
-.advert-header {
+.main-header .terms-text {
     font-family: Nunito;
-    font-size: 23px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 900;
-    line-height: 27px;
     letter-spacing: 0em;
+}
+
+/* Text underline */
+
+.elementor-1506 .elementor-element.elementor-element-eaee7ed .mdp-highlighter-svg {
+    width: 100%;
+    height: 115%;
+    transform: translate(4%, -7%) rotate(0deg) scale(1.1);
+    mix-blend-mode: multiply;
+}
+
+.mdp-highlighter-svg {
+    position: absolute;
+    overflow: visible;
+    transform-origin: center center;
+}
+
+.elementor *,
+.elementor :after,
+.elementor :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.mdp-highlighter-wrapper {
+    display: inline-flex;
+    overflow: visible;
+    perspective: 400px;
+}
+
+
+.mdp-highlighter-wrapper span {
+    overflow: visible;
+    z-index: 1;
+}
+
+.elementor-1506 .elementor-element.elementor-element-eaee7ed .mdp-highlighter-wrapper {
+    -webkit-text-fill-color: #D53060;
     text-align: left;
 }
 
-.advert-text {
-    font-family: 'Barlow';
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 27px;
-    letter-spacing: 0em;
-    text-align: left;
+svg {
+    -webkit-transition: fill 120ms ease-in-out;
+    transition: fill 120ms ease-in-out;
+    fill: #D53060;
 }
 
-.footer {
-    z-index: -999;
-    margin-top: 8%;
+.elementor-1506 .elementor-element.elementor-element-eaee7ed .mdp-highlighter-svg path {
+    animation-delay: 1s;
+    animation-duration: 10s;
+    animation-name: mdp-highlighter-20;
+    stroke-width: 10px;
+    stroke: #EF1051;
 }
 
-.footer .copyright-text {
-    font-family: 'Poppins';
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    text-align: left;
-
+.mdp-highlighter-loop path {
+    -webkit-animation-iteration-count: infinite !important;
+    animation-iteration-count: infinite !important;
 }
 
-.footer .footer2 .nav-link {
-    z-index: 99;
-    color: #FFFFFF;
-    font-family: 'Poppins';
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0em;
-    /* text-align: right; */
-
+.mdp-highlighter-round path {
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
 
-.fade-in {
-    animation: fadeIn ease 5s;
-    -webkit-animation: fadeIn ease 5s;
-    -moz-animation: fadeIn ease 5s;
-    -o-animation: fadeIn ease 5s;
-    -ms-animation: fadeIn ease 5s;
-}
-
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-moz-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-o-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@-ms-keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .bg-images-one {
-        z-index: 1;
-        transform: translate(130%, 200%);
-        position: absolute;
-    }
+.elementor-1506 .elementor-element.elementor-element-eaee7ed .mdp-highlighter-svg path:nth-child(2) {
+    animation-delay: calc(1s + 1s);
 }
 
 @media screen and (max-width: 800px) {
+    /* header {
+        height: 100%;
+    } */
+
+    .main-header .col-12 {
+        margin-top: 30% !important;
+    }
 
     .nav-item .btn {
         height: 35px;
@@ -375,13 +309,5 @@ header {
 
     .navbar-toggle {
         display: block;
-    }
-
-    .main-header .col-md-9 {
-        margin-top: 30% !important;
-    }
-
-    .footer .copyright-text {
-        text-align: center;
     }
 }

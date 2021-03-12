@@ -321,4 +321,8 @@ header {
     .main-header .col-md-9 {
         margin-top: 30% !important;
     }
+
+    .footer .copyright-text {
+        text-align: center;
+    }
 }

@@ -240,19 +240,16 @@ h6 {
 }
 
 .bg-images-two {
-    z-index: -999 i !important;
-    transform: translate(0%, -100%);
+    transform: translate(-32%, -77%);
     position: absolute;
 }
 
 .bg-images-two img {
-    z-index: -999 i !important;
     width: 190px;
 }
 
 .bg-images-three {
-    z-index: 1;
-    transform: translate(-50%, -100%);
+    transform: translate(-50%, -45%);
     right: 0;
     position: absolute;
 }
@@ -297,12 +294,18 @@ h6 {
         display: block;
     }
 
+    .bg-images-two {
+        transform: translate(-32%, -42%);
+        position: absolute;
+    }
+
+
     .bg-images-two img {
         width: 130px;
     }
 
     .bg-images-three {
-        transform: translate(-30%, -130%);
+        transform: translate(-30%, -50%);
         right: 0;
     }
 

@@ -65,9 +65,8 @@ header {
 }
 
 .nav-link:hover {
-  color: #f1ecec !important;
+  color: #DBCECE !important;
   margin-left: 15px;
-  /* width: 20px; */
 }
 
 .nav-link .d-md-none {
@@ -78,7 +77,7 @@ header {
 .nav-item .btn {
   font-family: 'Poppins';
   height: 30px;
-  font-size: 15px;
+  font-size: 14px;
   border-radius: 5px;
   background: #FF0E83;
   color: #FFFFFF;
@@ -172,7 +171,7 @@ header {
 
 
 .bg-images-one {
-  transform: translate(310%, 100%);
+  transform: translate(310%, 300%);
   position: absolute;
 }
 
@@ -350,7 +349,7 @@ header {
   }
 
   .bg-images-one {
-    transform: translate(190%, 70%);
+    transform: translate(190%, 150%);
     position: absolute;
   }
 }

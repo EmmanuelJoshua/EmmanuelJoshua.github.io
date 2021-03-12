@@ -78,7 +78,7 @@ header {
 .nav-item .btn {
     font-family: 'Poppins';
     height: 30px;
-    font-size: 15px;
+    font-size: 14px;
     border-radius: 5px;
     background: #FF0E83;
     color: #FFFFFF;
@@ -270,6 +270,7 @@ h6 {
     margin-right: 17px;
 }
 
+
 .footer .footer2 .nav-link {
     z-index: 99;
     color: #FFFFFF;
@@ -278,6 +279,8 @@ h6 {
     font-style: normal;
     font-weight: 500;
     letter-spacing: 0em;
+    /* text-align: right; */
+
 }
 
 @media screen and (max-width: 800px) {

@@ -322,11 +322,11 @@ header {
     margin-top: 25%;
   }
 
-  .footer .col-md-6 {
+  /* .footer .col-md-6 {
     display: flex;
     align-items: center !important;
     justify-content: center !important;
-  }
+  } */
 
   .bg-images-one {
     transform: translate(190%, 150%);
@@ -350,18 +350,6 @@ header {
     width: 135px;
   }
 }
-
-/* @-webkit-keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-/* @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-} */
 
 .stroke-dotted {
   opacity: 0;

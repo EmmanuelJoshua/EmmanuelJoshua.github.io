@@ -51,7 +51,7 @@ body {
 header {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 100%;
+    height: 100;
     background: linear-gradient(174.48deg, #090A0D -12.41%, #281AC8 120.17%);
 }
 
@@ -186,8 +186,9 @@ header {
 header {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    height: 100vh;
+    height: 100%;
     background: linear-gradient(174.48deg, #090A0D -12.41%, #281AC8 120.17%);
+    background-attachment: fixed;
 }
 
 .bg-images-one {
@@ -225,6 +226,45 @@ header {
     font-style: normal;
     font-weight: 900;
     letter-spacing: 0em;
+}
+
+.main-header .terms-p {
+    font-family: 'Barlow';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.main-header .terms-sub {
+    font-family: Nunito;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    letter-spacing: 0em;
+}
+
+.main-header .terms-list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header .terms-list ul li {
+    font-family: 'Barlow';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.main-header .terms-list ul .icon {
+    color: white !important;
+    fill: transparent !important;
 }
 
 /* Text underline */
@@ -294,11 +334,26 @@ svg {
     animation-delay: calc(1s + 1s);
 }
 
-@media screen and (max-width: 800px) {
-    /* header {
-        height: 100%;
-    } */
+.footer {
+    margin-top: 8%;
+}
 
+.footer .social-buttons .bt {
+    margin-right: 17px;
+}
+
+.footer .footer2 .nav-link {
+    z-index: 99;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0em;
+}
+
+
+@media screen and (max-width: 800px) {
     .main-header .col-12 {
         margin-top: 30% !important;
     }
@@ -309,5 +364,23 @@ svg {
 
     .navbar-toggle {
         display: block;
+    }
+
+    .bg-images-two {
+        transform: translate(-32%, -42%);
+        position: absolute;
+    }
+
+    .bg-images-two img {
+        width: 130px;
+    }
+
+    .bg-images-three {
+        transform: translate(-30%, -50%);
+        right: 0;
+    }
+
+    .bg-images-three img {
+        width: 80px;
     }
 }

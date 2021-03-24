@@ -65,12 +65,16 @@ header {
 }
 
 .nav-link:hover {
-    color: #adabab !important;
+    color: #ff0e83 !important;
 }
 
 .nav-link .d-md-none {
     width: 15px;
     margin-bottom: 1px;
+}
+
+.link-active {
+    color: #ff0e83 !important;
 }
 
 .nav-item .btn {

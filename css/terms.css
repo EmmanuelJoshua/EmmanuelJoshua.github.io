@@ -70,7 +70,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #adabab !important;
+    color: #ff0e83 !important;
 }
 
 .nav-link .d-md-none {
@@ -354,7 +354,7 @@ svg {
     }
 
     .nav-item .nav-link:hover {
-        color: #adabab !important;
+        color: #ff0e83 !important;
         margin-left: 15px;
     }
 

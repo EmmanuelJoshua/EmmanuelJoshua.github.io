@@ -65,7 +65,11 @@ header {
 }
 
 .nav-link:hover {
-    color: #adabab !important;
+    color: #ff0e83 !important;
+}
+
+.link-active {
+    color: #ff0e83 !important;
 }
 
 .nav-link .d-md-none {

@@ -84,12 +84,11 @@ header {
 }
 
 .verify-p {
-    font-family: 'Barlow';
-    font-size: 17px;
-    font-style: normal;
+    font-size: 1.3rem;
     font-weight: 500;
-    line-height: 31px;
-    letter-spacing: 0em;
+    color: #848486;
+    font-family: 'Barlow';
+    line-height: 2.4rem;
 }
 
 .box {
@@ -241,7 +240,11 @@ header {
     }
 
     .verify-p {
-        font-size: 17px;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: #848486;
+        font-family: 'Barlow';
+        line-height: 2.4rem;
     }
 
     .box {
@@ -259,7 +262,7 @@ header {
         height: 60px;
         width: 32px;
         left: 35px;
-        top: 75px;
+        top: 71px;
     }
 
     .container::before {

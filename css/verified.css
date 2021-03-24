@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
 
 body {
+    background-color: #090a0d;
     transition: .25s ease-in-out;
 }
 
@@ -39,7 +40,7 @@ header {
     -moz-osx-font-smoothing: grayscale;
     height: 100vh;
 
-    background-color: #090a0d;
+
     background-attachment: fixed;
 }
 
@@ -49,11 +50,13 @@ header {
     height: 100vh;
     position: fixed;
     background-repeat: repeat-y;
+    z-index: -1;
     top: 0;
 }
 
 .container::before {
     background-image: url(/assets/side_left.svg);
+
     left: 0;
 }
 
@@ -63,6 +66,7 @@ header {
     height: 100vh;
     position: fixed;
     background-repeat: repeat-y;
+    z-index: -1;
     top: 0;
 }
 
@@ -256,6 +260,14 @@ header {
         width: 32px;
         left: 35px;
         top: 75px;
+    }
+
+    .container::before {
+        left: -10px;
+    }
+
+    .container::after {
+        right: -10px;
     }
 
 

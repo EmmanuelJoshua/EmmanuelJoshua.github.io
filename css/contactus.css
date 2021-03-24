@@ -389,6 +389,16 @@ header {
         margin-top: 30% !important;
     }
 
+    .footer .col-md-6 .nav-link {
+        font-size: 12px;
+    }
+
+    .footer .col-md-6 {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
     .footer .copyright-text {
         text-align: center;
     }

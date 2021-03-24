@@ -379,4 +379,14 @@ svg {
     .bg-images-three img {
         width: 80px;
     }
+
+    .footer .col-md-6 .nav-link {
+        font-size: 12px;
+    }
+
+    .footer .col-md-6 {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+    }
 }

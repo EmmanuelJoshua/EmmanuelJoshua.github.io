@@ -47,14 +47,6 @@ body {
     }
 }
 
-
-header {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    height: 100;
-    background: linear-gradient(174.48deg, #090A0D -12.41%, #281AC8 120.17%);
-}
-
 .navbar-expand-lg {
     transition: 500ms ease;
     background: transparent;
@@ -78,8 +70,7 @@ header {
 }
 
 .nav-link:hover {
-    color: #DBCECE !important;
-    margin-left: 15px;
+    color: #adabab !important;
 }
 
 .nav-link .d-md-none {
@@ -360,6 +351,11 @@ svg {
 
     .nav-item .btn {
         height: 35px;
+    }
+
+    .nav-item .nav-link:hover {
+        color: #adabab !important;
+        margin-left: 15px;
     }
 
     .navbar-toggle {

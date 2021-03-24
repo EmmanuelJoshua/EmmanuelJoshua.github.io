@@ -65,9 +65,7 @@ header {
 }
 
 .nav-link:hover {
-    color: #f1ecec !important;
-    margin-left: 15px;
-    /* width: 20px; */
+    color: #adabab !important;
 }
 
 .nav-link .d-md-none {
@@ -185,7 +183,7 @@ header {
 
 .main-header .about-p {
     font-family: 'Barlow';
-    font-size: 15px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 500;
     line-height: 27px;
@@ -288,6 +286,11 @@ h6 {
 
     .nav-item .btn {
         height: 35px;
+    }
+
+    .nav-item .nav-link:hover {
+        color: #adabab !important;
+        margin-left: 15px;
     }
 
     .navbar-toggle {

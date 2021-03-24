@@ -65,8 +65,7 @@ header {
 }
 
 .nav-link:hover {
-  color: #DBCECE !important;
-  margin-left: 15px;
+  color: #adabab !important;
 }
 
 .nav-link .d-md-none {
@@ -80,8 +79,12 @@ header {
   font-size: 14px;
   border-radius: 5px;
   background: #FF0E83;
-  color: #FFFFFF;
   line-height: 1px;
+}
+
+.nav-item .btn a {
+  color: #FFFFFF;
+  text-decoration: none;
   letter-spacing: 0em;
   text-align: center;
 }
@@ -272,6 +275,11 @@ header {
 
   .nav-item .btn {
     height: 35px;
+  }
+
+  .nav-item .nav-link:hover {
+    color: #adabab !important;
+    margin-left: 15px;
   }
 
   .navbar-toggle {

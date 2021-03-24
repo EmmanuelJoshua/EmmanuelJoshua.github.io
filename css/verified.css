@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@500&display=swap');
+
+body {
+    transition: .25s ease-in-out;
+}
+
+.ripple {
+    width: 10px;
+    height: 10px;
+    opacity: 0;
+    z-index: 999;
+    transform: scale(0);
+    background: linear-gradient(178.18deg, rgba(253, 116, 155, 0.7) -13.56%, rgba(40, 26, 200, 0.7) 158.3%);
+
+    border-radius: 50%;
+    position: fixed;
+}
+
+.animate {
+    animation: ripple-mo 1s cubic-bezier(0, 0, 0.2, 1);
+}
+
+@keyframes ripple-mo {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+header {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100vh;
+
+    background-color: #090a0d;
+    background-attachment: fixed;
+}
+
+.container::before {
+    content: "";
+    width: 5rem;
+    height: 100vh;
+    position: fixed;
+    background-repeat: repeat-y;
+    top: 0;
+}
+
+.container::before {
+    background-image: url(/assets/side_left.svg);
+    left: 0;
+}
+
+.container::after {
+    content: "";
+    width: 3rem;
+    height: 100vh;
+    position: fixed;
+    background-repeat: repeat-y;
+    top: 0;
+}
+
+.container::after {
+    background-image: url(/assets/side_right.svg);
+    right: 0;
+}
+
+.image-header img {
+    width: 220px;
+}
+
+.verify-head {
+    font-family: 'Poppins';
+}
+
+.verify-p {
+    font-family: 'Barlow';
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0em;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.box .background {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #6827f9, #2f80ed);
+    position: absolute;
+}
+
+.clipped {
+    clip-path: polygon(50% 0%, 46.93% 3.1%, 43.47% 0.43%, 40.83% 3.9%, 37.06% 1.7%, 34.89% 5.49%, 30.87% 3.81%, 29.21% 7.85%, 25% 6.7%, 23.89% 10.92%, 19.56% 10.33%, 19.01% 14.66%, 14.64% 14.64%, 14.66% 19.01%, 10.33% 19.56%, 10.92% 23.89%, 6.7% 25%, 7.85% 29.21%, 3.81% 30.87%, 5.49% 34.89%, 1.7% 37.06%, 3.9% 40.83%, 0.43% 43.47%, 3.1% 46.93%, 0% 50%, 3.1% 53.07%, 0.43% 56.53%, 3.9% 59.17%, 1.7% 62.94%, 5.49% 65.11%, 3.81% 69.13%, 7.85% 70.79%, 6.7% 75%, 10.92% 76.11%, 10.33% 80.44%, 14.66% 80.99%, 14.64% 85.36%, 19.01% 85.34%, 19.56% 89.67%, 23.89% 89.08%, 25% 93.3%, 29.21% 92.15%, 30.87% 96.19%, 34.89% 94.51%, 37.06% 98.3%, 40.83% 96.1%, 43.47% 99.57%, 46.93% 96.9%, 50% 100%, 53.07% 96.9%, 56.53% 99.57%, 59.17% 96.1%, 62.94% 98.3%, 65.11% 94.51%, 69.13% 96.19%, 70.79% 92.15%, 75% 93.3%, 76.11% 89.08%, 80.44% 89.67%, 80.99% 85.34%, 85.36% 85.36%, 85.34% 80.99%, 89.67% 80.44%, 89.08% 76.11%, 93.3% 75%, 92.15% 70.79%, 96.19% 69.13%, 94.51% 65.11%, 98.3% 62.94%, 96.1% 59.17%, 99.57% 56.53%, 96.9% 53.07%, 100% 50%, 96.9% 46.93%, 99.57% 43.47%, 96.1% 40.83%, 98.3% 37.06%, 94.51% 34.89%, 96.19% 30.87%, 92.15% 29.21%, 93.3% 25%, 89.08% 23.89%, 89.67% 19.56%, 85.34% 19.01%, 85.36% 14.64%, 80.99% 14.66%, 80.44% 10.33%, 76.11% 10.92%, 75% 6.7%, 70.79% 7.85%, 69.13% 3.81%, 65.11% 5.49%, 62.94% 1.7%, 59.17% 3.9%, 56.53% 0.43%, 53.07% 3.1%);
+}
+
+.box .checkmark {
+    border-radius: 5px;
+}
+
+.box .checkmark.draw:after {
+    -webkit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+    animation-delay: 1000ms;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: ease;
+    -moz-animation-timing-function: ease;
+    animation-timing-function: ease;
+    -webkit-animation-name: checkmark;
+    -moz-animation-name: checkmark;
+    animation-name: checkmark;
+    -webkit-transform: scaleX(-1) rotate(135deg);
+    -moz-transform: scaleX(-1) rotate(135deg);
+    -ms-transform: scaleX(-1) rotate(135deg);
+    -o-transform: scaleX(-1) rotate(135deg);
+    transform: scaleX(-1) rotate(135deg);
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.box .checkmark:after {
+    opacity: 1;
+    height: 75px;
+    width: 37.5px;
+    -webkit-transform-origin: left top;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    transform-origin: left top;
+    border-right: 15px solid white;
+    border-top: 15px solid white;
+    border-radius: 2.5px !important;
+    content: "";
+    left: 35px;
+    top: 80px;
+    position: absolute;
+}
+
+@-webkit-keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+
+    20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+    }
+
+    40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+
+    20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+    }
+
+    40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+}
+
+@keyframes checkmark {
+    0% {
+        height: 0;
+        width: 0;
+        opacity: 1;
+    }
+
+    20% {
+        height: 0;
+        width: 37.5px;
+        opacity: 1;
+    }
+
+    40% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+
+    100% {
+        height: 75px;
+        width: 37.5px;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .verify-head {
+        font-size: 27px;
+    }
+
+    .verify-p {
+        font-size: 17px;
+    }
+
+    .box {
+        width: 130px;
+        height: 130px;
+
+    }
+
+    .box .background {
+        width: 130px;
+        height: 130px;
+    }
+
+    .box .checkmark:after {
+        height: 60px;
+        width: 32px;
+        left: 35px;
+        top: 75px;
+    }
+
+
+    @-webkit-keyframes checkmark {
+        0% {
+            height: 0;
+            width: 0;
+            opacity: 1;
+        }
+
+        20% {
+            height: 0;
+            width: 32px;
+            opacity: 1;
+        }
+
+        40% {
+            height: 60px;
+            width: 32px;
+            opacity: 1;
+        }
+
+        100% {
+            height: 60px;
+            width: 32px;
+            opacity: 1;
+        }
+    }
+
+    @-moz-keyframes checkmark {
+        0% {
+            height: 0;
+            width: 0;
+            opacity: 1;
+        }
+
+        20% {
+            height: 0;
+            width: 32px;
+            opacity: 1;
+        }
+
+        40% {
+            height: 60px;
+            width: 32px;
+            opacity: 1;
+        }
+
+        100% {
+            height: 60px;
+            width: 32px;
+            opacity: 1;
+        }
+    }
+
+    @keyframes checkmark {
+        0% {
+            height: 0;
+            width: 0;
+            opacity: 1;
+        }
+
+        20% {
+            height: 0;
+            width: 32px;
+            opacity: 1;
+        }
+
+        40% {
+            height: 60px;
+            width: 32px;
+            opacity: 1;
+        }
+
+        100% {
+            height: 60px;
+            width: 32px;
+            opacity: 1;
+        }
+    }
+
+
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome mail</title>
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 5%;
+            background-color: #03041B;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .logo img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 50%;
+            text-align: center;
+        }
+
+        .wrapper::before {
+            content: "";
+            width: 5rem;
+            height: 100vh;
+            position: fixed;
+            background-repeat: repeat-y;
+            z-index: -1;
+            top: 0;
+        }
+
+        .wrapper::before {
+            background-image: url("https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1619047393/side_left_wzld1w.svg");
+            left: -15px;
+        }
+
+        .wrapper::after {
+            content: "";
+            width: 3rem;
+            height: 100vh;
+            position: fixed;
+            background-repeat: repeat-y;
+            z-index: -1;
+            top: 0;
+        }
+
+        .wrapper::after {
+            background-image: url("https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1619047405/side_right_iyjlyr.svg");
+            right: -15px;
+        }
+
+        .header-class {
+            text-align: center;
+            color: #fff;
+        }
+
+        .img-header img {
+            display: block;
+            width: auto;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 70%;
+            text-align: center;
+        }
+
+        .header-class h1 {
+            font-weight: 600;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+
+        .header-class h2 {
+            font-weight: 500;
+            font-size: 1.4rem;
+        }
+
+
+        .header-p {
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            color: rgb(241, 234, 234);
+            padding-bottom: 2rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .learn-p {
+            font-weight: 500;
+            font-size: 1rem;
+            text-align: center;
+            color: rgb(241, 234, 234);
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        .gradient-text {
+            background-color: #CA4246;
+
+            background-image: linear-gradient(45deg,
+                    #A9721D 16.666%,
+                    #E16541 16.666%,
+                    #E16541 33.333%,
+                    #F18F43 33.333%,
+                    #F18F43 50%,
+                    #8B9862 50%,
+                    #8B9862 66.666%,
+                    #476098 66.666%,
+                    #476098 83.333%,
+                    #5458F7 83.333%);
+            background-size: 100%;
+            background-repeat: repeat;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+
+        }
+
+        .ml-auto {
+            margin-left: auto;
+        }
+
+        .btn1 {
+            box-shadow: 0 0.8rem 2rem rgb(0 0 0 / 10%);
+            border-radius: .5rem;
+            font-weight: 600;
+            font-style: normal;
+            font-size: 1.2rem;
+            text-decoration: none;
+            outline: none;
+            padding: 1rem 4rem;
+            color: #fff;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .btn-alternate {
+            transition: all .3s;
+            background-color: initial;
+            border: 1px solid #5458f7;
+            filter: drop-shadow(0 8px 20px rgba(0, 0, 0, .1));
+            border-radius: 5px;
+        }
+
+        .align-items-center {
+            -webkit-box-align: center !important;
+            -ms-flex-align: center !important;
+            align-items: center !important;
+        }
+
+        .justify-content-center {
+            -webkit-box-pack: center !important;
+            -ms-flex-pack: center !important;
+            justify-content: center !important;
+        }
+
+        .d-flex {
+            display: -webkit-box !important;
+            display: -ms-flexbox !important;
+            display: flex !important;
+        }
+
+        hr {
+            height: 1.6px;
+            background-image: linear-gradient(45deg,
+                    #A9721D 16.666%,
+                    #E16541 16.666%,
+                    #E16541 33.333%,
+                    #F18F43 33.333%,
+                    #F18F43 50%,
+                    #8B9862 50%,
+                    #8B9862 66.666%,
+                    #476098 66.666%,
+                    #476098 83.333%,
+                    #5458F7 83.333%);
+            border: 0;
+            width: 70%;
+            margin-bottom: 2rem;
+        }
+
+        .social-buttons {
+            text-align: center;
+        }
+
+        .social-buttons .bt {
+            text-align: center;
+            margin-right: 17px;
+        }
+
+        @media screen and (max-width: 600px) {
+            .logo img {
+                margin-right: auto;
+                margin-left: auto;
+                max-width: 50%;
+                text-align: center;
+            }
+
+            .header-class h1 {
+                font-weight: 600;
+                text-align: center;
+                font-size: 2.2rem;
+            }
+
+            .btn1 {
+                margin-bottom: 1rem;
+                font-size: 1.1rem;
+                padding: 0.9rem 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main-content">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1620754514/two_d5snro.png"
+                    alt="raven_logo">
+            </div>
+            <div class="header-class">
+                <h1 class="gradient-text">
+                    Welcome to Raven Livestream.
+                </h1>
+            </div>
+
+            <div class="img-header">
+                <img src="https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1620754481/frame1_doelkx.png"
+                    alt="raven_header">
+            </div>
+
+            <p class="header-p">
+                You can now access millions of live events happening all over the world on the go. At Raven, our mission
+                is
+                to
+                democratize entertainment and give YOU the power to host, monetize and watch live events. Start
+                streaming
+                from the
+                comfort of your home today and see the world closer to you.
+            </p>
+
+            <div class="header-class">
+                <h2>
+                    HOST. GUEST. SPONSOR. VIEWER
+                </h2>
+            </div>
+
+            <p class="header-p">
+                On Raven, anyone can host an event, be a guest, sponsor and viewer. Whether you want to Watch, Create or
+                search for
+                events, you have complete control.
+            </p>
+
+            <div class="header-class">
+                <h2>
+                    MAKE MONEY AND SHARE</h2>
+            </div>
+
+            <p class="header-p">
+                You don't need to be a creator to earn money on Raven. You can host any type of event and set ticket
+                prices. ($$$).
+                Ticket prices are set in Dollars ($) which can be withdrawn directly into your bank account anywhere in
+                the world. Buy
+                multiple tickets and share directly to your friends and family on Raven
+            </p>
+
+
+            <div class="header-class">
+                <h2>
+                    STAY CONNECTED ON THE GO</h2>
+            </div>
+
+            <p class="header-p">
+                Invite your friends, gain followers and follow any of your favourite creators on Raven.
+                Chat with your friends and fans, grow your fan base and have fun from anywhere in the world.
+            </p>
+
+            <p class="learn-p">
+                For more info,
+            </p>
+
+            <div class="d-flex justify-content-center align-items-center">
+                <a class="btn1 btn-alternate" href="http://ravenlivestream.com/aboutus.html">Learn more</a>
+            </div>
+
+            <hr />
+
+            <div class="social-div social-buttons mb-4">
+                <a href="https://web.facebook.com/ravenlivestreamapp/" target=”_blank”><img
+                        src="https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1620755920/facebook2_ypl0ye.png"
+                        width="25" class="bt"></a>
+                <a href="https://twitter.com/ravenlivestream" target=”_blank”><img
+                        src="https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1620755931/twitter2_buozkw.png"
+                        width="25" class="bt"></a>
+                <a href="https://www.instagram.com/ravenlivestream/" target=”_blank”><img
+                        src="https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1620755925/instagram2_ixn8w3.png"
+                        width="25" class="bt"></a>
+                <a href="https://www.youtube.com/channel/UClJKM1I1-PKLLSRWxNe10Dw" target=”_blank”><img
+                        src="https://res.cloudinary.com/www-ravenlivestream-com/image/upload/v1620755935/YouTube2_dqlt0n.png"
+                        width="25"></a>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
